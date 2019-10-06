@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p001v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/store_tab_follow_store_layout" android:layout_width="match_parent" android:layout_height="110dp">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="?attr/flatButtonBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/follow_store_image" android:layout_width="57dp" android:layout_height="57dp" android:layout_marginTop="3dp" android:src="@drawable/ic_add_circle_outline" android:scaleType="fitCenter" android:contentDescription="@null"/>
+        <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/follow_store" android:maxLines="1" android:textAllCaps="true" style="@style/Aptoide.TextView.Medium.XS"/>
+    </LinearLayout>
+</android.support.p001v7.widget.CardView>

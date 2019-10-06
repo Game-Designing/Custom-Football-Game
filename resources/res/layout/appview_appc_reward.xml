@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+    <View android:background="#f6f7f9" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <ImageView android:id="@+id/appcoins_logo" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="22dp" android:layout_marginTop="16dp" android:layout_marginBottom="15dp" android:src="@drawable/ic_appcoins" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="13dp" app:layout_constraintStart_toEndOf="@+id/appcoins_logo" app:layout_constraintTop_toTopOf="0">
+        <TextView android:layout_gravity="center_vertical" android:id="@+id/appcoins_reward_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" style="@style/Aptoide.TextView.Medium.S.BlackAlpha"/>
+        <TextView android:id="@+id/appc_billing_text_secondary" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appc_message_appview_appcoins_iab" style="@style/Aptoide.TextView.Medium.XXS"/>
+    </LinearLayout>
+    <View android:background="#f6f7f9" android:layout_width="match_parent" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0"/>
+</android.support.constraint.ConstraintLayout>

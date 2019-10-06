@@ -1,0 +1,59 @@
+package p005cm.aptoide.p006pt;
+
+import javax.inject.Provider;
+import org.jacoco.agent.p025rt.internal_8ff85ea.Offline;
+import p005cm.aptoide.p006pt.view.app.AppCenterRepository;
+import p005cm.aptoide.p006pt.view.app.AppService;
+import p318e.p319a.C13181b;
+import p318e.p319a.C13182c;
+
+/* renamed from: cm.aptoide.pt.ApplicationModule_ProvidesAppCenterRepositoryFactory */
+public final class ApplicationModule_ProvidesAppCenterRepositoryFactory implements C13181b<AppCenterRepository> {
+    private static transient /* synthetic */ boolean[] $jacocoData;
+    private final Provider<AppService> appServiceProvider;
+    private final ApplicationModule module;
+
+    private static /* synthetic */ boolean[] $jacocoInit() {
+        boolean[] zArr = $jacocoData;
+        if (zArr != null) {
+            return zArr;
+        }
+        boolean[] probes = Offline.getProbes(6154392533583034974L, "cm/aptoide/pt/ApplicationModule_ProvidesAppCenterRepositoryFactory", 7);
+        $jacocoData = probes;
+        return probes;
+    }
+
+    public ApplicationModule_ProvidesAppCenterRepositoryFactory(ApplicationModule module2, Provider<AppService> appServiceProvider2) {
+        boolean[] $jacocoInit = $jacocoInit();
+        this.module = module2;
+        this.appServiceProvider = appServiceProvider2;
+        $jacocoInit[0] = true;
+    }
+
+    public AppCenterRepository get() {
+        boolean[] $jacocoInit = $jacocoInit();
+        ApplicationModule applicationModule = this.module;
+        Provider<AppService> provider = this.appServiceProvider;
+        $jacocoInit[1] = true;
+        AppCenterRepository providesAppCenterRepository = applicationModule.providesAppCenterRepository((AppService) provider.get());
+        $jacocoInit[2] = true;
+        C13182c.m43111a(providesAppCenterRepository, "Cannot return null from a non-@Nullable @Provides method");
+        AppCenterRepository appCenterRepository = providesAppCenterRepository;
+        $jacocoInit[3] = true;
+        return appCenterRepository;
+    }
+
+    public static C13181b<AppCenterRepository> create(ApplicationModule module2, Provider<AppService> appServiceProvider2) {
+        boolean[] $jacocoInit = $jacocoInit();
+        ApplicationModule_ProvidesAppCenterRepositoryFactory applicationModule_ProvidesAppCenterRepositoryFactory = new ApplicationModule_ProvidesAppCenterRepositoryFactory(module2, appServiceProvider2);
+        $jacocoInit[4] = true;
+        return applicationModule_ProvidesAppCenterRepositoryFactory;
+    }
+
+    public static AppCenterRepository proxyProvidesAppCenterRepository(ApplicationModule instance, AppService appService) {
+        boolean[] $jacocoInit = $jacocoInit();
+        AppCenterRepository providesAppCenterRepository = instance.providesAppCenterRepository(appService);
+        $jacocoInit[5] = true;
+        return providesAppCenterRepository;
+    }
+}

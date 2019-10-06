@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/include_payment_product_icon" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:id="@+id/include_payment_product_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="96dp" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:layout_marginStart="96dp" style="@style/TextAppearance.Aptoide.Subhead"/>
+        <TextView android:ellipsize="end" android:id="@+id/include_payment_product_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="96dp" android:layout_marginBottom="16dp" android:lines="2" android:layout_below="@+id/include_payment_product_name" android:layout_marginStart="96dp" style="@style/TextAppearance.Aptoide.Caption.Inverse"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="56dp">
+            <ImageView android:id="@+id/activity_selected_payment_checked_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:src="@drawable/selected_payment_icon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            <TextView android:gravity="end" android:id="@+id/include_payment_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:lines="1" android:layout_toLeftOf="@+id/activity_selected_payment_checked_image" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_toStartOf="@+id/activity_selected_payment_checked_image" style="@style/TextAppearance.Aptoide.Title"/>
+        </RelativeLayout>
+        <View android:background="@color/fragment_payment_dark_gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+</LinearLayout>

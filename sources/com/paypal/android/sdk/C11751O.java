@@ -1,0 +1,103 @@
+package com.paypal.android.sdk;
+
+/* renamed from: com.paypal.android.sdk.O */
+public enum C11751O {
+    PPRiskDataAnId(0),
+    PPRiskDataAppGuid(1),
+    PPRiskDataAppId(2),
+    PPRiskDataAppVersion(3),
+    PPRiskDataBaseStationId(4),
+    PPRiskDataBssid(5),
+    PPRiskDataCellId(6),
+    PPRiskDataClrVersion(7),
+    PPRiskDataCompVersion(8),
+    PPRiskDataConfUrl(9),
+    PPRiskDataConfVersion(10),
+    PPRiskDataConnType(11),
+    PPRiskDataDeviceFirmwareVersion(12),
+    PPRiskDataDeviceId(13),
+    PPRiskDataDeviceModel(14),
+    PPRiskDataDeviceName(15),
+    PPRiskDataDeviceUptime(16),
+    PPRiskDataDongleDeviceId(17),
+    PPRiskDataEmailConfigured(18),
+    PPRiskDataEmulator(19),
+    PPRiskDataError(20),
+    PPRiskDataIpAddrs(21),
+    PPRiskDataKeyboardPresent(22),
+    PPRiskDataKnownApps(23),
+    PPRiskDataLine1Number(24),
+    PPRiskDataLinkerId(25),
+    PPRiskDataLicenseAccepted(26),
+    PPRiskDataLocaleCountry(27),
+    PPRiskDataLocaleLang(28),
+    PPRiskDataLocation(29),
+    PPRiskDataLocationAreaCode(30),
+    PPRiskDataLocationAuthStatus(31),
+    PPRiskDataMacAddrs(32),
+    PPRiskDataMobileOperatorName(33),
+    PPRiskDataNotifToken(34),
+    PPRiskDataOsPlatform(35),
+    PPRiskDataOsType(36),
+    PPRiskDataOsVersion(37),
+    PPRiskDataPayloadType(38),
+    PPRiskDataPhoneType(39),
+    PPRiskDataPinLockLastTimestamp(40),
+    PPRiskDataPowerSource(41),
+    PPRiskDataRiskCompSessionId(42),
+    PPRiskDataRoaming(43),
+    PPRiskDataRoamingPossible(44),
+    PPRiskDataSimOperatorName(45),
+    PPRiskDataSimSerialNumber(46),
+    PPRiskDataSmsEnabled(47),
+    PPRiskDataSsid(48),
+    PPRiskDataSubscriberId(49),
+    PPRiskDataTimestamp(50),
+    PPRiskDataTotalDeviceMemory(51),
+    PPRiskDataTotalStorageSpace(52),
+    PPRiskDataTzName(53),
+    PPRiskDataAdvertisingIdentifier(54),
+    PPRiskDataVendorIdentifier(55),
+    PPRiskDataNetworkOperator(56),
+    PPRiskDataCdmaNetworkId(57),
+    PPRiskDataCdmaSystemId(58),
+    PPRiskDataIsEmulator(59),
+    PPRiskDataIsRooted(60),
+    PPRiskDataGeoCountry(61),
+    PPRiskDataSourceApp(62),
+    PPRiskDataSourceAppVersion(63),
+    PPRiskDataPairingId(64),
+    PPRiskDataAppFirstInstallTime(65),
+    PPRiskDataAppLastUpdateTime(66),
+    PPRiskDataBluetoothMacAddress(67),
+    PPRiskDataSerialNumber(68),
+    PPRiskDataAndroidId(69),
+    PPRiskDataGsfId(70),
+    PPRiskDataVPNSetting(71),
+    PPRiskDataProxySetting(72),
+    PPRiskDataLocalIdentifier(73),
+    PPRiskDataCloudIdentifier(74),
+    PPRiskDataIpAddresses(75),
+    PPRiskDataUnused2(76),
+    PPRiskDataUnused3(77),
+    PPRiskDataUnused4(78),
+    PPRiskDataIsDaylightSaving(79),
+    PPRiskDataTimeZoneOffset(80),
+    PPRiskDataDcId(81),
+    PPRiskDataCounter(82),
+    PPRiskDataPM(83),
+    PPRiskDataBssidArray(84);
+    
+
+    /* renamed from: Ia */
+    private int f36858Ia;
+
+    private C11751O(int i) {
+        this.f36858Ia = i;
+    }
+
+    /* renamed from: a */
+    public final int mo38609a() {
+        return this.f36858Ia;
+    }
+}

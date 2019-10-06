@@ -1,0 +1,12 @@
+package p019d.p143b.p144a.p147c;
+
+/* renamed from: d.b.a.c.Bc */
+public enum C7047Bc {
+    UNKNOWN,
+    APPLOVIN_PRIMARY_ZONE,
+    APPLOVIN_CUSTOM_ZONE,
+    APPLOVIN_MULTIZONE,
+    MEDIATED_SDK,
+    REGULAR_AD_TOKEN,
+    DECODED_AD_TOKEN_JSON
+}

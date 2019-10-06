@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="@dimen/dialog_content_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RadioButton android:id="@+id/radio_imagery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_imagery"/>
+    <RadioButton android:id="@+id/radio_misleading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_misleading"/>
+    <RadioButton android:id="@+id/radio_shaky" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_shaky"/>
+    <RadioButton android:id="@+id/radio_inappropriate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_inappropriate"/>
+    <RadioButton android:id="@+id/radio_unwantedBehavior" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_unwantedBehavior"/>
+    <RadioButton android:id="@+id/radio_playAudio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/report_ad_reason_playAudio"/>
+</RadioGroup>

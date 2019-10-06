@@ -1,0 +1,230 @@
+package p005cm.aptoide.p006pt.view;
+
+import android.content.res.Resources;
+import android.view.WindowManager;
+import javax.inject.Provider;
+import org.jacoco.agent.p025rt.internal_8ff85ea.Offline;
+import p005cm.aptoide.accountmanager.AptoideAccountManager;
+import p005cm.aptoide.p006pt.account.view.store.StoreManager;
+import p005cm.aptoide.p006pt.ads.MoPubAdsManager;
+import p005cm.aptoide.p006pt.app.AdsManager;
+import p005cm.aptoide.p006pt.app.AppCoinsManager;
+import p005cm.aptoide.p006pt.app.AppViewAnalytics;
+import p005cm.aptoide.p006pt.app.AppViewManager;
+import p005cm.aptoide.p006pt.app.DownloadStateParser;
+import p005cm.aptoide.p006pt.app.FlagManager;
+import p005cm.aptoide.p006pt.app.ReviewsManager;
+import p005cm.aptoide.p006pt.app.migration.AppcMigrationManager;
+import p005cm.aptoide.p006pt.app.migration.AppcMigrationService;
+import p005cm.aptoide.p006pt.download.DownloadFactory;
+import p005cm.aptoide.p006pt.install.InstallAnalytics;
+import p005cm.aptoide.p006pt.install.InstallManager;
+import p005cm.aptoide.p006pt.install.InstalledRepository;
+import p005cm.aptoide.p006pt.notification.AppcPromotionNotificationStringProvider;
+import p005cm.aptoide.p006pt.notification.NotificationAnalytics;
+import p005cm.aptoide.p006pt.notification.sync.LocalNotificationSyncManager;
+import p005cm.aptoide.p006pt.promotions.PromotionsManager;
+import p005cm.aptoide.p006pt.store.StoreUtilsProxy;
+import p005cm.aptoide.p006pt.view.app.AppCenter;
+import p318e.p319a.C13181b;
+import p318e.p319a.C13182c;
+
+/* renamed from: cm.aptoide.pt.view.FragmentModule_ProvidesAppViewManagerFactory */
+public final class FragmentModule_ProvidesAppViewManagerFactory implements C13181b<AppViewManager> {
+    private static transient /* synthetic */ boolean[] $jacocoData;
+    private final Provider<AdsManager> adsManagerProvider;
+    private final Provider<AppCenter> appCenterProvider;
+    private final Provider<AppCoinsManager> appCoinsManagerProvider;
+    private final Provider<AppViewAnalytics> appViewAnalyticsProvider;
+    private final Provider<AppViewConfiguration> appViewConfigurationProvider;
+    private final Provider<AppcMigrationManager> appcMigrationManagerProvider;
+    private final Provider<AppcMigrationService> appcMigrationServiceProvider;
+    private final Provider<AppcPromotionNotificationStringProvider> appcPromotionNotificationStringProvider;
+    private final Provider<AptoideAccountManager> aptoideAccountManagerProvider;
+    private final Provider<DownloadFactory> downloadFactoryProvider;
+    private final Provider<DownloadStateParser> downloadStateParserProvider;
+    private final Provider<FlagManager> flagManagerProvider;
+    private final Provider<InstallAnalytics> installAnalyticsProvider;
+    private final Provider<InstallManager> installManagerProvider;
+    private final Provider<InstalledRepository> installedRepositoryProvider;
+    private final Provider<LocalNotificationSyncManager> localNotificationSyncManagerProvider;
+    private final Provider<String> marketNameProvider;
+    private final Provider<MoPubAdsManager> moPubAdsManagerProvider;
+    private final FragmentModule module;
+    private final Provider<NotificationAnalytics> notificationAnalyticsProvider;
+    private final Provider<PromotionsManager> promotionsManagerProvider;
+    private final Provider<Resources> resourcesProvider;
+    private final Provider<ReviewsManager> reviewsManagerProvider;
+    private final Provider<StoreManager> storeManagerProvider;
+    private final Provider<StoreUtilsProxy> storeUtilsProxyProvider;
+    private final Provider<WindowManager> windowManagerProvider;
+
+    private static /* synthetic */ boolean[] $jacocoInit() {
+        boolean[] zArr = $jacocoData;
+        if (zArr != null) {
+            return zArr;
+        }
+        boolean[] probes = Offline.getProbes(8984300168966632169L, "cm/aptoide/pt/view/FragmentModule_ProvidesAppViewManagerFactory", 32);
+        $jacocoData = probes;
+        return probes;
+    }
+
+    public FragmentModule_ProvidesAppViewManagerFactory(FragmentModule module2, Provider<InstallManager> installManagerProvider2, Provider<DownloadFactory> downloadFactoryProvider2, Provider<AppCenter> appCenterProvider2, Provider<ReviewsManager> reviewsManagerProvider2, Provider<AdsManager> adsManagerProvider2, Provider<StoreManager> storeManagerProvider2, Provider<FlagManager> flagManagerProvider2, Provider<StoreUtilsProxy> storeUtilsProxyProvider2, Provider<AptoideAccountManager> aptoideAccountManagerProvider2, Provider<AppViewConfiguration> appViewConfigurationProvider2, Provider<DownloadStateParser> downloadStateParserProvider2, Provider<AppViewAnalytics> appViewAnalyticsProvider2, Provider<NotificationAnalytics> notificationAnalyticsProvider2, Provider<InstallAnalytics> installAnalyticsProvider2, Provider<Resources> resourcesProvider2, Provider<WindowManager> windowManagerProvider2, Provider<String> marketNameProvider2, Provider<AppCoinsManager> appCoinsManagerProvider2, Provider<MoPubAdsManager> moPubAdsManagerProvider2, Provider<PromotionsManager> promotionsManagerProvider2, Provider<InstalledRepository> installedRepositoryProvider2, Provider<AppcMigrationManager> appcMigrationManagerProvider2, Provider<LocalNotificationSyncManager> localNotificationSyncManagerProvider2, Provider<AppcPromotionNotificationStringProvider> appcPromotionNotificationStringProvider2, Provider<AppcMigrationService> appcMigrationServiceProvider2) {
+        boolean[] $jacocoInit = $jacocoInit();
+        this.module = module2;
+        this.installManagerProvider = installManagerProvider2;
+        this.downloadFactoryProvider = downloadFactoryProvider2;
+        this.appCenterProvider = appCenterProvider2;
+        this.reviewsManagerProvider = reviewsManagerProvider2;
+        this.adsManagerProvider = adsManagerProvider2;
+        this.storeManagerProvider = storeManagerProvider2;
+        this.flagManagerProvider = flagManagerProvider2;
+        this.storeUtilsProxyProvider = storeUtilsProxyProvider2;
+        this.aptoideAccountManagerProvider = aptoideAccountManagerProvider2;
+        this.appViewConfigurationProvider = appViewConfigurationProvider2;
+        this.downloadStateParserProvider = downloadStateParserProvider2;
+        this.appViewAnalyticsProvider = appViewAnalyticsProvider2;
+        this.notificationAnalyticsProvider = notificationAnalyticsProvider2;
+        this.installAnalyticsProvider = installAnalyticsProvider2;
+        this.resourcesProvider = resourcesProvider2;
+        this.windowManagerProvider = windowManagerProvider2;
+        this.marketNameProvider = marketNameProvider2;
+        this.appCoinsManagerProvider = appCoinsManagerProvider2;
+        this.moPubAdsManagerProvider = moPubAdsManagerProvider2;
+        this.promotionsManagerProvider = promotionsManagerProvider2;
+        this.installedRepositoryProvider = installedRepositoryProvider2;
+        this.appcMigrationManagerProvider = appcMigrationManagerProvider2;
+        this.localNotificationSyncManagerProvider = localNotificationSyncManagerProvider2;
+        this.appcPromotionNotificationStringProvider = appcPromotionNotificationStringProvider2;
+        this.appcMigrationServiceProvider = appcMigrationServiceProvider2;
+        $jacocoInit[0] = true;
+    }
+
+    public AppViewManager get() {
+        boolean[] $jacocoInit = $jacocoInit();
+        FragmentModule fragmentModule = this.module;
+        Provider<InstallManager> provider = this.installManagerProvider;
+        $jacocoInit[1] = true;
+        InstallManager installManager = (InstallManager) provider.get();
+        Provider<DownloadFactory> provider2 = this.downloadFactoryProvider;
+        $jacocoInit[2] = true;
+        DownloadFactory downloadFactory = (DownloadFactory) provider2.get();
+        Provider<AppCenter> provider3 = this.appCenterProvider;
+        $jacocoInit[3] = true;
+        AppCenter appCenter = (AppCenter) provider3.get();
+        Provider<ReviewsManager> provider4 = this.reviewsManagerProvider;
+        $jacocoInit[4] = true;
+        ReviewsManager reviewsManager = (ReviewsManager) provider4.get();
+        Provider<AdsManager> provider5 = this.adsManagerProvider;
+        $jacocoInit[5] = true;
+        AdsManager adsManager = (AdsManager) provider5.get();
+        Provider<StoreManager> provider6 = this.storeManagerProvider;
+        $jacocoInit[6] = true;
+        StoreManager storeManager = (StoreManager) provider6.get();
+        Provider<FlagManager> provider7 = this.flagManagerProvider;
+        $jacocoInit[7] = true;
+        FlagManager flagManager = (FlagManager) provider7.get();
+        Provider<StoreUtilsProxy> provider8 = this.storeUtilsProxyProvider;
+        $jacocoInit[8] = true;
+        StoreUtilsProxy storeUtilsProxy = (StoreUtilsProxy) provider8.get();
+        Provider<AptoideAccountManager> provider9 = this.aptoideAccountManagerProvider;
+        $jacocoInit[9] = true;
+        AptoideAccountManager aptoideAccountManager = (AptoideAccountManager) provider9.get();
+        Provider<AppViewConfiguration> provider10 = this.appViewConfigurationProvider;
+        $jacocoInit[10] = true;
+        AppViewConfiguration appViewConfiguration = (AppViewConfiguration) provider10.get();
+        Provider<DownloadStateParser> provider11 = this.downloadStateParserProvider;
+        $jacocoInit[11] = true;
+        DownloadStateParser downloadStateParser = (DownloadStateParser) provider11.get();
+        Provider<AppViewAnalytics> provider12 = this.appViewAnalyticsProvider;
+        $jacocoInit[12] = true;
+        AppViewAnalytics appViewAnalytics = (AppViewAnalytics) provider12.get();
+        Provider<NotificationAnalytics> provider13 = this.notificationAnalyticsProvider;
+        $jacocoInit[13] = true;
+        NotificationAnalytics notificationAnalytics = (NotificationAnalytics) provider13.get();
+        FragmentModule fragmentModule2 = fragmentModule;
+        Provider<InstallAnalytics> provider14 = this.installAnalyticsProvider;
+        $jacocoInit[14] = true;
+        InstallAnalytics installAnalytics = (InstallAnalytics) provider14.get();
+        Provider<Resources> provider15 = this.resourcesProvider;
+        $jacocoInit[15] = true;
+        Resources resources = (Resources) provider15.get();
+        Provider<WindowManager> provider16 = this.windowManagerProvider;
+        $jacocoInit[16] = true;
+        WindowManager windowManager = (WindowManager) provider16.get();
+        Provider<String> provider17 = this.marketNameProvider;
+        $jacocoInit[17] = true;
+        String str = (String) provider17.get();
+        Provider<AppCoinsManager> provider18 = this.appCoinsManagerProvider;
+        $jacocoInit[18] = true;
+        AppCoinsManager appCoinsManager = (AppCoinsManager) provider18.get();
+        Provider<MoPubAdsManager> provider19 = this.moPubAdsManagerProvider;
+        $jacocoInit[19] = true;
+        MoPubAdsManager moPubAdsManager = (MoPubAdsManager) provider19.get();
+        Provider<PromotionsManager> provider20 = this.promotionsManagerProvider;
+        $jacocoInit[20] = true;
+        PromotionsManager promotionsManager = (PromotionsManager) provider20.get();
+        Provider<InstalledRepository> provider21 = this.installedRepositoryProvider;
+        $jacocoInit[21] = true;
+        InstalledRepository installedRepository = (InstalledRepository) provider21.get();
+        Provider<AppcMigrationManager> provider22 = this.appcMigrationManagerProvider;
+        $jacocoInit[22] = true;
+        AppcMigrationManager appcMigrationManager = (AppcMigrationManager) provider22.get();
+        Provider<LocalNotificationSyncManager> provider23 = this.localNotificationSyncManagerProvider;
+        $jacocoInit[23] = true;
+        LocalNotificationSyncManager localNotificationSyncManager = (LocalNotificationSyncManager) provider23.get();
+        Provider<AppcPromotionNotificationStringProvider> provider24 = this.appcPromotionNotificationStringProvider;
+        $jacocoInit[24] = true;
+        AppcPromotionNotificationStringProvider appcPromotionNotificationStringProvider2 = (AppcPromotionNotificationStringProvider) provider24.get();
+        Provider<AppcMigrationService> provider25 = this.appcMigrationServiceProvider;
+        $jacocoInit[25] = true;
+        AppcMigrationService appcMigrationService = (AppcMigrationService) provider25.get();
+        $jacocoInit[26] = true;
+        AppViewManager providesAppViewManager = fragmentModule2.providesAppViewManager(installManager, downloadFactory, appCenter, reviewsManager, adsManager, storeManager, flagManager, storeUtilsProxy, aptoideAccountManager, appViewConfiguration, downloadStateParser, appViewAnalytics, notificationAnalytics, installAnalytics, resources, windowManager, str, appCoinsManager, moPubAdsManager, promotionsManager, installedRepository, appcMigrationManager, localNotificationSyncManager, appcPromotionNotificationStringProvider2, appcMigrationService);
+        $jacocoInit[27] = true;
+        C13182c.m43111a(providesAppViewManager, "Cannot return null from a non-@Nullable @Provides method");
+        AppViewManager appViewManager = providesAppViewManager;
+        $jacocoInit[28] = true;
+        return appViewManager;
+    }
+
+    public static C13181b<AppViewManager> create(FragmentModule module2, Provider<InstallManager> installManagerProvider2, Provider<DownloadFactory> downloadFactoryProvider2, Provider<AppCenter> appCenterProvider2, Provider<ReviewsManager> reviewsManagerProvider2, Provider<AdsManager> adsManagerProvider2, Provider<StoreManager> storeManagerProvider2, Provider<FlagManager> flagManagerProvider2, Provider<StoreUtilsProxy> storeUtilsProxyProvider2, Provider<AptoideAccountManager> aptoideAccountManagerProvider2, Provider<AppViewConfiguration> appViewConfigurationProvider2, Provider<DownloadStateParser> downloadStateParserProvider2, Provider<AppViewAnalytics> appViewAnalyticsProvider2, Provider<NotificationAnalytics> notificationAnalyticsProvider2, Provider<InstallAnalytics> installAnalyticsProvider2, Provider<Resources> resourcesProvider2, Provider<WindowManager> windowManagerProvider2, Provider<String> marketNameProvider2, Provider<AppCoinsManager> appCoinsManagerProvider2, Provider<MoPubAdsManager> moPubAdsManagerProvider2, Provider<PromotionsManager> promotionsManagerProvider2, Provider<InstalledRepository> installedRepositoryProvider2, Provider<AppcMigrationManager> appcMigrationManagerProvider2, Provider<LocalNotificationSyncManager> localNotificationSyncManagerProvider2, Provider<AppcPromotionNotificationStringProvider> appcPromotionNotificationStringProvider2, Provider<AppcMigrationService> appcMigrationServiceProvider2) {
+        FragmentModule fragmentModule = module2;
+        Provider<InstallManager> provider = installManagerProvider2;
+        Provider<DownloadFactory> provider2 = downloadFactoryProvider2;
+        Provider<AppCenter> provider3 = appCenterProvider2;
+        Provider<ReviewsManager> provider4 = reviewsManagerProvider2;
+        Provider<AdsManager> provider5 = adsManagerProvider2;
+        Provider<StoreManager> provider6 = storeManagerProvider2;
+        Provider<FlagManager> provider7 = flagManagerProvider2;
+        Provider<StoreUtilsProxy> provider8 = storeUtilsProxyProvider2;
+        Provider<AptoideAccountManager> provider9 = aptoideAccountManagerProvider2;
+        Provider<AppViewConfiguration> provider10 = appViewConfigurationProvider2;
+        Provider<DownloadStateParser> provider11 = downloadStateParserProvider2;
+        Provider<AppViewAnalytics> provider12 = appViewAnalyticsProvider2;
+        Provider<NotificationAnalytics> provider13 = notificationAnalyticsProvider2;
+        Provider<InstallAnalytics> provider14 = installAnalyticsProvider2;
+        Provider<Resources> provider15 = resourcesProvider2;
+        Provider<WindowManager> provider16 = windowManagerProvider2;
+        Provider<String> provider17 = marketNameProvider2;
+        Provider<AppCoinsManager> provider18 = appCoinsManagerProvider2;
+        Provider<MoPubAdsManager> provider19 = moPubAdsManagerProvider2;
+        Provider<PromotionsManager> provider20 = promotionsManagerProvider2;
+        Provider<InstalledRepository> provider21 = installedRepositoryProvider2;
+        Provider<AppcMigrationManager> provider22 = appcMigrationManagerProvider2;
+        Provider<LocalNotificationSyncManager> provider23 = localNotificationSyncManagerProvider2;
+        Provider<AppcPromotionNotificationStringProvider> provider24 = appcPromotionNotificationStringProvider2;
+        Provider<AppcMigrationService> provider25 = appcMigrationServiceProvider2;
+        boolean[] $jacocoInit = $jacocoInit();
+        FragmentModule_ProvidesAppViewManagerFactory fragmentModule_ProvidesAppViewManagerFactory = new FragmentModule_ProvidesAppViewManagerFactory(fragmentModule, provider, provider2, provider3, provider4, provider5, provider6, provider7, provider8, provider9, provider10, provider11, provider12, provider13, provider14, provider15, provider16, provider17, provider18, provider19, provider20, provider21, provider22, provider23, provider24, provider25);
+        $jacocoInit[29] = true;
+        return fragmentModule_ProvidesAppViewManagerFactory;
+    }
+
+    public static AppViewManager proxyProvidesAppViewManager(FragmentModule instance, InstallManager installManager, DownloadFactory downloadFactory, AppCenter appCenter, ReviewsManager reviewsManager, AdsManager adsManager, StoreManager storeManager, FlagManager flagManager, StoreUtilsProxy storeUtilsProxy, AptoideAccountManager aptoideAccountManager, AppViewConfiguration appViewConfiguration, DownloadStateParser downloadStateParser, AppViewAnalytics appViewAnalytics, NotificationAnalytics notificationAnalytics, InstallAnalytics installAnalytics, Resources resources, WindowManager windowManager, String marketName, AppCoinsManager appCoinsManager, MoPubAdsManager moPubAdsManager, PromotionsManager promotionsManager, InstalledRepository installedRepository, AppcMigrationManager appcMigrationManager, LocalNotificationSyncManager localNotificationSyncManager, AppcPromotionNotificationStringProvider appcPromotionNotificationStringProvider2, AppcMigrationService appcMigrationService) {
+        boolean[] $jacocoInit = $jacocoInit();
+        AppViewManager providesAppViewManager = instance.providesAppViewManager(installManager, downloadFactory, appCenter, reviewsManager, adsManager, storeManager, flagManager, storeUtilsProxy, aptoideAccountManager, appViewConfiguration, downloadStateParser, appViewAnalytics, notificationAnalytics, installAnalytics, resources, windowManager, marketName, appCoinsManager, moPubAdsManager, promotionsManager, installedRepository, appcMigrationManager, localNotificationSyncManager, appcPromotionNotificationStringProvider2, appcMigrationService);
+        $jacocoInit[30] = true;
+        return providesAppViewManager;
+    }
+}

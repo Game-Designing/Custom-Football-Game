@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p001v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardCornerRadius="7dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/promotion_app_card_top"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/promotion_app_action_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_marginTop="16dp" style="@style/Aptoide.Button.Install"/>
+    </LinearLayout>
+</android.support.p001v7.widget.CardView>

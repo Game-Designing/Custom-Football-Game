@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="timeline_short_comment">
+        <item quantity="one">१ टिप्पणी</item>
+        <item quantity="other">%d टिप्पण्या</item>
+    </plurals>
+</resources>

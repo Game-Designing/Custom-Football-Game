@@ -1,0 +1,60 @@
+package com.facebook.common;
+
+/* renamed from: com.facebook.common.d */
+/* compiled from: R */
+public final class C6658d {
+    public static final int abc_action_bar_home_description = 2131689485;
+    public static final int abc_action_bar_up_description = 2131689486;
+    public static final int abc_action_menu_overflow_description = 2131689487;
+    public static final int abc_action_mode_done = 2131689488;
+    public static final int abc_activity_chooser_view_see_all = 2131689489;
+    public static final int abc_activitychooserview_choose_application = 2131689490;
+    public static final int abc_capital_off = 2131689491;
+    public static final int abc_capital_on = 2131689492;
+    public static final int abc_font_family_body_1_material = 2131689493;
+    public static final int abc_font_family_body_2_material = 2131689494;
+    public static final int abc_font_family_button_material = 2131689495;
+    public static final int abc_font_family_caption_material = 2131689496;
+    public static final int abc_font_family_display_1_material = 2131689497;
+    public static final int abc_font_family_display_2_material = 2131689498;
+    public static final int abc_font_family_display_3_material = 2131689499;
+    public static final int abc_font_family_display_4_material = 2131689500;
+    public static final int abc_font_family_headline_material = 2131689501;
+    public static final int abc_font_family_menu_material = 2131689502;
+    public static final int abc_font_family_subhead_material = 2131689503;
+    public static final int abc_font_family_title_material = 2131689504;
+    public static final int abc_search_hint = 2131689505;
+    public static final int abc_searchview_description_clear = 2131689506;
+    public static final int abc_searchview_description_query = 2131689507;
+    public static final int abc_searchview_description_search = 2131689508;
+    public static final int abc_searchview_description_submit = 2131689509;
+    public static final int abc_searchview_description_voice = 2131689510;
+    public static final int abc_shareactionprovider_share_with = 2131689511;
+    public static final int abc_shareactionprovider_share_with_application = 2131689512;
+    public static final int abc_toolbar_collapse_description = 2131689513;
+    public static final int com_facebook_device_auth_instructions = 2131689742;
+    public static final int com_facebook_image_download_unknown_error = 2131689743;
+    public static final int com_facebook_internet_permission_error_message = 2131689744;
+    public static final int com_facebook_internet_permission_error_title = 2131689745;
+    public static final int com_facebook_like_button_liked = 2131689746;
+    public static final int com_facebook_like_button_not_liked = 2131689747;
+    public static final int com_facebook_loading = 2131689748;
+    public static final int com_facebook_loginview_cancel_action = 2131689749;
+    public static final int com_facebook_loginview_log_in_button = 2131689750;
+    public static final int com_facebook_loginview_log_in_button_continue = 2131689751;
+    public static final int com_facebook_loginview_log_in_button_long = 2131689752;
+    public static final int com_facebook_loginview_log_out_action = 2131689753;
+    public static final int com_facebook_loginview_log_out_button = 2131689754;
+    public static final int com_facebook_loginview_logged_in_as = 2131689755;
+    public static final int com_facebook_loginview_logged_in_using_facebook = 2131689756;
+    public static final int com_facebook_send_button_text = 2131689758;
+    public static final int com_facebook_share_button_text = 2131689759;
+    public static final int com_facebook_smart_device_instructions = 2131689760;
+    public static final int com_facebook_smart_device_instructions_or = 2131689761;
+    public static final int com_facebook_smart_login_confirmation_cancel = 2131689762;
+    public static final int com_facebook_smart_login_confirmation_continue_as = 2131689763;
+    public static final int com_facebook_smart_login_confirmation_title = 2131689764;
+    public static final int com_facebook_tooltip_default = 2131689765;
+    public static final int search_menu_title = 2131690366;
+    public static final int status_bar_notification_info_overflow = 2131690445;
+}

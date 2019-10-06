@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:title="@string/settings_title_settings" android:key="root">
+    <PreferenceCategory android:title="@string/setting_general">
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_appfiltertitle" android:key="hwspecsChkBox" android:summary="@string/setting_appfiltersum" android:defaultValue="true"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_mobile" android:key="downloadwifionly" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/updates">
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/settings_updates_filter_setting_title" android:key="updatesFilterAlphaBetaKey" android:summary="@string/settings_updates_filter_summary" android:defaultValue="false"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/settings_include_system_apps_title" android:key="updatesSystemAppsKey" android:summary="@string/settings_include_system_apps_summary" android:defaultValue="false"/>
+        <Preference android:title="@string/excluded_updates" android:key="excludedUpdates"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_notifications">
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_notifications_sub_section_2" android:key="notification_campaign_and_social" android:summary="@string/setting_notifications_sub_sub_section_2" android:defaultValue="true"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_notifications_sub_section_1" android:key="notificationaptoide" android:summary="@string/setting_notifications_sub_sub_section_1" android:defaultValue="true"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_category_autoupdate_title" android:key="checkautoupdate" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_clear_memory">
+        <Preference android:title="@string/settings_clearcache_title" android:key="clearcache" android:summary="@string/settings_clear_cache_summary"/>
+        <EditTextPreference android:maxLength="3" android:numeric="integer" android:title="@string/settings_maxFileCache_title" android:key="maxFileCache" android:summary="@string/settings_maxFileCache_sum" android:inputType="number"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/order_popup_title3" android:key="adultContent">
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:persistent="false" android:title="@string/setting_dont_show_mature_content" android:key="matureChkBox" android:defaultValue="true"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:persistent="false" android:visible="false" android:title="@string/setting_dont_show_mature_content" android:key="matureChkBoxWithPin" android:defaultValue="true"/>
+        <Preference android:persistent="false" android:title="@string/set_mature_pin_title" android:key="Maturepin" android:summary="@string/set_mature_pin_summary" android:inputType="number"/>
+        <Preference android:persistent="false" android:visible="false" android:title="@string/remove_mature_pin_title" android:key="removeMaturepin" android:summary="@string/remove_mature_pin_summary" android:inputType="number"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_root" android:key="rootCategory">
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/settings_allow_root" android:key="allowRoot"/>
+        <android.support.p001v7.preference.SwitchPreferenceCompat android:title="@string/setting_auto_update_title" android:key="auto_update" android:summary="@string/setting_auto_update_sum" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_support" android:key="about">
+        <Preference android:title="@string/settings_send_feedback" android:key="sendFeedback"/>
+        <Preference android:title="@string/settings_about_us" android:key="aboutDialog"/>
+        <Preference android:title="@string/settings_terms_conditions" android:key="termsConditions"/>
+        <Preference android:title="@string/settings_privacy_policy" android:key="privacyPolicy"/>
+        <Preference android:title="@string/setting_hwspecstitle" android:key="hwspecs" android:summary="@string/setting_hwspecssum"/>
+        <Preference android:title="@string/settings_delete_account" android:key="deleteAccount"/>
+    </PreferenceCategory>
+</PreferenceScreen>

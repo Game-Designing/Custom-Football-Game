@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:background="@color/background_light_grey" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+            <View style="@style/Divider"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="22dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/card_number_layout" android:background="@android:color/transparent" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bank_account_number" android:layout_alignParentLeft="true"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lock_icon" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <com.adyen.p081ui.views.IBANEditText android:gravity="center_vertical" android:id="@+id/adyen_sepa_iban_edit_text" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_iban_number" android:inputType="none|text|textCapCharacters|textNoSuggestions" android:textAllCaps="true"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingTop="22dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:layout_gravity="left" android:id="@+id/card_holder_name_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cardholder_name"/>
+                    <com.adyen.p081ui.views.CardHolderEditText android:id="@+id/adyen_bank_account_holder_name" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_cardholder_name" android:inputType="textCapWords"/>
+                </LinearLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_direct_debit_consent" android:paddingTop="22dp" android:paddingBottom="12dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/layout_click_area_consent_checkbox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <com.adyen.p081ui.views.CheckoutCheckBox android:gravity="center" android:layout_gravity="center" android:id="@+id/consent_direct_debit_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                        <TextView android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/direct_debit_consent" android:layout_toLeftOf="@+id/consent_direct_debit_checkbox"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/Divider"/>
+        <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="22dp">
+            <FrameLayout android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.adyen.p081ui.views.CheckoutButton android:enabled="false" android:textSize="20sp" android:id="@+id/collect_direct_debit_data" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/adyenRoundCheckoutButton"/>
+            </FrameLayout>
+            <TextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/amount_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <ProgressBar android:id="@+id/processing_progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:indeterminateDrawable="@drawable/get_paid_progress_bar" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

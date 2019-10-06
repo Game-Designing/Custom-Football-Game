@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/appview_title_donations_leaderboard" style="@style/Aptoide.TextView.Medium.M.BlackAlpha"/>
+    <FrameLayout android:id="@+id/donations_list_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="170dp" android:layout_marginBottom="12dp">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/donations_progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <android.support.p001v7.widget.RecyclerView android:id="@+id/donations_list" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/donations_list_empty_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/illustration_donations"/>
+            <TextView android:gravity="center" android:layout_gravity="center" android:layout_width="188dp" android:layout_height="wrap_content" android:text="@string/appview_message_donations_empty" style="@style/Aptoide.TextView.Regular.M.Grey700"/>
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textColor="@color/silver_dark" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/appview_message_donations_leaderboard" style="@style/Aptoide.TextView.Regular.XS"/>
+    <Button android:id="@+id/donate_button" android:layout_width="match_parent" android:text="@string/appview_button_donations" style="@style/Aptoide.Button.Ghost.S.Grey"/>
+</LinearLayout>

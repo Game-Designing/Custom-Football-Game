@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="87dp" style="?attr/backgroundCard">
+    <ImageView android:id="@+id/main_icon" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/ic_avatar_apps" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/secondary_icon" android:layout_width="26dp" android:layout_height="26dp" android:layout_toLeftOf="@+id/names_layout" android:layout_alignBottom="@+id/main_icon" android:layout_toStartOf="@+id/names_layout"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/names_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_toLeftOf="@+id/separator_vertical" android:layout_toRightOf="@+id/main_icon" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_toStartOf="@+id/separator_vertical" android:layout_toEndOf="@+id/main_icon">
+        <TextView android:textStyle="bold" android:id="@+id/store_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@drawable/ic_store" android:drawableStart="@drawable/ic_store"/>
+        <TextView android:id="@+id/user_name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <include android:id="@+id/separator_vertical" android:layout_width="1dp" android:layout_height="87dp" android:layout_marginRight="107dp" android:layout_alignParentRight="true" android:layout_marginEnd="107dp" android:layout_alignParentEnd="true" layout="@layout/separator_vertical"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/followers_following_numbers" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <TextView android:gravity="center" android:id="@+id/followers_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/timeline_stats_followers"/>
+        <TextView android:gravity="center" android:id="@+id/followers_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:layout_gravity="center" android:background="?attr/separatorColor" android:layout_width="100dp" android:layout_height="1dp" android:layout_marginLeft="9dp" android:layout_marginRight="4dp" android:layout_marginStart="9dp" android:layout_marginEnd="4dp"/>
+        <TextView android:gravity="center" android:id="@+id/following_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/followed"/>
+        <TextView android:gravity="center" android:id="@+id/following_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/follow_store_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true">
+        <Button android:textAppearance="?android:attr/textAppearanceSmallInverse" android:textSize="8.4sp" android:textColor="@color/app_view_follow_orange" android:id="@+id/follow_btn" android:background="@drawable/button_border_orange3" android:layout_width="100dp" android:layout_height="30dp" android:text="@string/follow" android:textAllCaps="true"/>
+    </LinearLayout>
+</RelativeLayout>

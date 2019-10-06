@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="timeline_short_comment">
+        <item quantity="zero">%d تعليق</item>
+        <item quantity="one">1 تعليق</item>
+        <item quantity="two">%d تعليق</item>
+        <item quantity="few">%d تعليق</item>
+        <item quantity="many">%d تعليق</item>
+        <item quantity="other">%d تعليق</item>
+    </plurals>
+</resources>

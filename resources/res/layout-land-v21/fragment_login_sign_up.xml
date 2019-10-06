@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/main_content" android:background="?attr/flatButtonBackground" android:paddingBottom="@dimen/bottom_skip_bar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout android:id="@+id/appbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include layout="@layout/toolbar"/>
+            </android.support.design.widget.AppBarLayout>
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="14dp" android:src="@drawable/app_logo_colourful"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/login_signup_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="360dp" android:elevation="16dp" app:behavior_hideable="false" app:behavior_peekHeight="270dp" app:layout_behavior="android.support.design.widget.BottomSheetBehavior"/>
+</android.support.design.widget.CoordinatorLayout>

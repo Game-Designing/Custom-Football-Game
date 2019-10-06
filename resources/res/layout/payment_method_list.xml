@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="56dp">
+    <com.adyen.p081ui.views.AdyenIconImageView android:id="@+id/paymentMethodLogo" android:layout_width="40dp" android:layout_height="26dp" android:layout_marginLeft="20dp" android:layout_marginTop="16dp" android:layout_marginRight="20dp"/>
+    <TextView android:textSize="13sp" android:layout_gravity="center" android:id="@+id/paymentMethodName" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

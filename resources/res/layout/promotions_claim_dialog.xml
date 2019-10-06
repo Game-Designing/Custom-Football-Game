@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.p001v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_centerInParent="true"/>
+            <include android:id="@+id/insert_address_view" android:visibility="visible" layout="@layout/insert_wallet_address_view"/>
+            <include android:id="@+id/captcha_view" android:visibility="gone" layout="@layout/claim_promotion_captcha_view"/>
+            <include android:id="@+id/generic_message_view" android:visibility="gone" layout="@layout/promotions_dialog_generic_message_view"/>
+            <include android:id="@+id/generic_error" layout="@layout/generic_error_layout"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.p001v7.widget.CardView>

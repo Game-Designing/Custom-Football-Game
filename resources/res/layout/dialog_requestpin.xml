@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/message" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:drawablePadding="4dp"/>
+    <EditText android:textSize="@dimen/text_size_medium" android:gravity="center" android:id="@+id/pininput" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="8" android:inputType="number"/>
+</LinearLayout>

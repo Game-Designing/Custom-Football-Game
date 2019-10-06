@@ -1,0 +1,29 @@
+package com.vungle.warren.p267ui;
+
+import android.content.DialogInterface.OnClickListener;
+import android.net.Uri;
+
+/* renamed from: com.vungle.warren.ui.AdView */
+public interface AdView {
+    void close();
+
+    String getWebsiteUrl();
+
+    void open(String str);
+
+    void playVideo(Uri uri, boolean z);
+
+    void setOrientation(int i);
+
+    void setVisibility(boolean z);
+
+    void showCTAOverlay(boolean z, boolean z2, int i);
+
+    void showCloseButton();
+
+    void showDialog(String str, String str2, String str3, String str4, OnClickListener onClickListener);
+
+    void showWebsite(String str);
+
+    void updateWindow(boolean z);
+}

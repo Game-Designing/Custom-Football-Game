@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="timeline_short_comment">
+        <item quantity="one">1 comentario</item>
+        <item quantity="other">%d comentarios</item>
+    </plurals>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/topBar" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageButton android:id="@+id/closeButton" android:background="@drawable/ic_browser_close_40dp" android:layout_width="@dimen/button_size" android:layout_height="@dimen/button_size" android:layout_alignParentLeft="true"/>
+        <TextView android:ellipsize="end" android:gravity="center" android:id="@+id/titleView" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_toLeftOf="@+id/openButton" android:layout_toRightOf="@+id/closeButton" android:layout_centerVertical="true"/>
+        <ImageButton android:id="@+id/openButton" android:background="@drawable/ic_open_in_browser_40dp" android:layout_width="@dimen/button_size" android:layout_height="@dimen/button_size" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/webViewContainer" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomBar" android:layout_below="@+id/topBar"/>
+    <RelativeLayout android:id="@+id/bottomBar" android:background="#c8c8c8" android:layout_width="match_parent" android:layout_height="40dp" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@+id/goForwardButton" android:background="@drawable/ic_forward_40dp" android:visibility="gone" android:layout_width="@dimen/button_size" android:layout_height="@dimen/button_size" android:layout_alignParentRight="true"/>
+        <ImageButton android:id="@+id/goBackwardButton" android:background="@drawable/ic_backward_40dp" android:visibility="gone" android:layout_width="@dimen/button_size" android:layout_height="@dimen/button_size" android:layout_alignParentLeft="true"/>
+        <ImageButton android:enabled="false" android:id="@+id/reloadButton" android:background="@drawable/ic_reload_40dp" android:layout_width="@dimen/button_size" android:layout_height="@dimen/button_size" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="?attr/icMyAccountDrawable" android:id="@+id/navigation_item_my_account" android:orderInCategory="1" android:title="@string/drawer_title_my_account"/>
+    <item android:icon="?attr/icExcludedUpdatesDrawable" android:id="@+id/navigation_item_excluded_updates" android:orderInCategory="2" android:title="@string/excluded_updates"/>
+    <item android:icon="?attr/icSettingsDrawable" android:id="@+id/navigation_item_settings" android:orderInCategory="3" android:title="@string/drawer_title_settings"/>
+    <item android:icon="?attr/icSendFeedbackDrawable" android:id="@+id/send_feedback" android:orderInCategory="4" android:title="@string/drawer_title_feedback_send_button"/>
+</menu>

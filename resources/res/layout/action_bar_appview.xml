@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/app_bar_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="131dp" app:elevation="1dp">
+    <android.support.design.widget.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:background="?attr/toolbarBackground" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent" app:expandedTitleGravity="30" app:layout_scrollFlags="3" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:toolbarId="@+id/toolbar">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/collapsing_appc_coins_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31dp" android:src="@drawable/ic_app_view_appc_coins" app:layout_collapseMode="2" app:layout_collapseParallaxMultiplier="0.8"/>
+        <android.support.p001v7.widget.Toolbar android:gravity="center" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:minHeight="112dp" app:layout_collapseMode="1" app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        <p005cm.aptoide.p006pt.app.view.ToolbarArcBackground android:id="@+id/toolbar_background_arc" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </android.support.design.widget.CollapsingToolbarLayout>
+</android.support.design.widget.AppBarLayout>

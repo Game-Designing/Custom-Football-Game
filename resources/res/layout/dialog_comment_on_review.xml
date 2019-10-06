@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_large" android:textColor="?attr/colorPrimary" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"/>
+    <include android:visibility="gone" layout="@layout/separator_horizontal"/>
+    <android.support.design.widget.TextInputLayout android:id="@+id/input_layout_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+        <EditText android:textSize="@dimen/text_size_medium" android:textColorHint="@color/silver_dark" android:ellipsize="none" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/input_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/write_your_comment" android:lines="4"/>
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="?attr/colorPrimary" android:id="@+id/comment_button" android:background="@null" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_button_comment" android:layout_alignParentRight="true" android:textAllCaps="true"/>
+        <Button android:textSize="@dimen/text_size_medium" android:textColor="@color/silver_dark" android:id="@+id/cancel_button" android:background="@null" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:text="@string/cancel" android:layout_toLeftOf="@+id/comment_button" android:textAllCaps="true"/>
+    </RelativeLayout>
+</LinearLayout>

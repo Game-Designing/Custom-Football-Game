@@ -1,0 +1,66 @@
+package com.adyen.p081ui;
+
+/* renamed from: com.adyen.ui.e */
+/* compiled from: R */
+public final class C5632e {
+    public static final int abc_action_bar_home_description = 2131689485;
+    public static final int abc_action_bar_up_description = 2131689486;
+    public static final int abc_action_menu_overflow_description = 2131689487;
+    public static final int abc_action_mode_done = 2131689488;
+    public static final int abc_activity_chooser_view_see_all = 2131689489;
+    public static final int abc_activitychooserview_choose_application = 2131689490;
+    public static final int abc_capital_off = 2131689491;
+    public static final int abc_capital_on = 2131689492;
+    public static final int abc_font_family_body_1_material = 2131689493;
+    public static final int abc_font_family_body_2_material = 2131689494;
+    public static final int abc_font_family_button_material = 2131689495;
+    public static final int abc_font_family_caption_material = 2131689496;
+    public static final int abc_font_family_display_1_material = 2131689497;
+    public static final int abc_font_family_display_2_material = 2131689498;
+    public static final int abc_font_family_display_3_material = 2131689499;
+    public static final int abc_font_family_display_4_material = 2131689500;
+    public static final int abc_font_family_headline_material = 2131689501;
+    public static final int abc_font_family_menu_material = 2131689502;
+    public static final int abc_font_family_subhead_material = 2131689503;
+    public static final int abc_font_family_title_material = 2131689504;
+    public static final int abc_search_hint = 2131689505;
+    public static final int abc_searchview_description_clear = 2131689506;
+    public static final int abc_searchview_description_query = 2131689507;
+    public static final int abc_searchview_description_search = 2131689508;
+    public static final int abc_searchview_description_submit = 2131689509;
+    public static final int abc_searchview_description_voice = 2131689510;
+    public static final int abc_shareactionprovider_share_with = 2131689511;
+    public static final int abc_shareactionprovider_share_with_application = 2131689512;
+    public static final int abc_toolbar_collapse_description = 2131689513;
+    public static final int bank_account_number = 2131689688;
+    public static final int cancel_button = 2131689730;
+    public static final int card_number = 2131689732;
+    public static final int card_number_of_installments = 2131689733;
+    public static final int cardholder_name = 2131689734;
+    public static final int cvc_cvv = 2131689834;
+    public static final int cvc_extended_hint_with_last_digits = 2131689835;
+    public static final int direct_debit_consent = 2131689852;
+    public static final int example = 2131689966;
+    public static final int expiry_date = 2131690001;
+    public static final int font_sans_serif_light = 2131690025;
+    public static final int giropay_example = 2131690036;
+    public static final int giropay_search_field_hint = 2131690037;
+    public static final int hint_card_number = 2131690047;
+    public static final int hint_cardholder_name = 2131690048;
+    public static final int hint_cvc_cvv = 2131690049;
+    public static final int hint_expiry_date = 2131690050;
+    public static final int hint_iban_number = 2131690051;
+    public static final int min_3_chars = 2131690167;
+    public static final int other_payment_methods_label = 2131690224;
+    public static final int pay_with_amount = 2131690239;
+    public static final int preferred_payment_methods_label = 2131690245;
+    public static final int remember_card_hint = 2131690307;
+    public static final int search_menu_title = 2131690366;
+    public static final int status_bar_notification_info_overflow = 2131690445;
+    public static final int title_card_details = 2131690477;
+    public static final int title_giropay = 2131690478;
+    public static final int title_issuers = 2131690479;
+    public static final int title_payment_methods = 2131690480;
+    public static final int title_sepa = 2131690482;
+    public static final int title_verify_card = 2131690484;
+}

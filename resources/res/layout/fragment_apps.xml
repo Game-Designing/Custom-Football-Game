@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/action_bar"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/partial_view_progress_bar"/>
+        <android.support.p000v4.widget.SwipeRefreshLayout android:id="@+id/fragment_apps_swipe_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.p000v4.widget.NestedScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include android:id="@+id/appc_apps_layout" android:visibility="gone" layout="@layout/appc_apps_section_item"/>
+                    <android.support.p001v7.widget.RecyclerView android:id="@+id/fragment_apps_recycler_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/appc_apps_layout"/>
+                </RelativeLayout>
+            </android.support.p000v4.widget.NestedScrollView>
+        </android.support.p000v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</LinearLayout>

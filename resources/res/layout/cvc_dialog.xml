@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cvc_dialog_outer_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_view" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/black_text" android:layout_gravity="center_horizontal" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_verify_card"/>
+        <TextView android:textSize="18sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/extended_cvc_hint_textview" android:paddingLeft="10dp" android:paddingTop="13dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cvc_extended_hint_with_last_digits"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp">
+            <TextView android:textSize="12sp" android:layout_gravity="left" android:id="@+id/credit_card_cvc_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cvc_cvv"/>
+            <com.adyen.p081ui.views.CVCEditText android:id="@+id/adyen_credit_card_cvc" android:paddingRight="50dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/hint_cvc_cvv" android:inputType="phone"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp">
+            <RelativeLayout android:layout_gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <View android:layout_alignParentTop="true" style="@style/Divider"/>
+                <Button android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textSize="18sp" android:textColor="@color/hint_text_color" android:id="@+id/button_cancel_cvc_verification" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:text="@string/cancel_button"/>
+            </RelativeLayout>
+            <Button android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textSize="18sp" android:layout_gravity="right" android:id="@+id/button_confirm_cvc_verification" android:paddingTop="0.5dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/pay_with_amount" android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.adyen.p081ui.views.loadinganimation.ThreeDotsLoadingView android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="@style/LoadingAnimationView"/>
+</RelativeLayout>

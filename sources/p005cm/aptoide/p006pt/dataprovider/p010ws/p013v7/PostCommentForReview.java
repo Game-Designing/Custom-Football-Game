@@ -1,0 +1,78 @@
+package p005cm.aptoide.p006pt.dataprovider.p010ws.p013v7;
+
+import android.content.SharedPreferences;
+import com.mopub.common.Constants;
+import okhttp3.OkHttpClient;
+import p005cm.aptoide.p006pt.dataprovider.BuildConfig;
+import p005cm.aptoide.p006pt.dataprovider.interfaces.TokenInvalidator;
+import p005cm.aptoide.p006pt.dataprovider.model.p009v7.BaseV7Response;
+import p005cm.aptoide.p006pt.dataprovider.p010ws.BodyInterceptor;
+import p005cm.aptoide.p006pt.dataprovider.p010ws.p013v7.C0044V7.Interfaces;
+import p005cm.aptoide.p006pt.dataprovider.util.CommentType;
+import p005cm.aptoide.p006pt.preferences.toolbox.ToolboxManager;
+import p026rx.C0120S;
+import retrofit2.Converter.Factory;
+
+/* renamed from: cm.aptoide.pt.dataprovider.ws.v7.PostCommentForReview */
+public class PostCommentForReview extends C0044V7<BaseV7Response, Body> {
+
+    /* renamed from: cm.aptoide.pt.dataprovider.ws.v7.PostCommentForReview$Body */
+    public static class Body extends BaseBody {
+        private String body;
+        private String commentType = CommentType.REVIEW.name();
+        private long reviewId;
+
+        public Body(long reviewId2, String text) {
+            this.reviewId = reviewId2;
+            this.body = text;
+        }
+
+        public long getReviewId() {
+            return this.reviewId;
+        }
+
+        public void setReviewId(long reviewId2) {
+            this.reviewId = reviewId2;
+        }
+
+        public String getBody() {
+            return this.body;
+        }
+
+        public void setBody(String body2) {
+            this.body = body2;
+        }
+
+        public String getCommentType() {
+            return this.commentType;
+        }
+
+        public void setCommentType(String commentType2) {
+            this.commentType = commentType2;
+        }
+    }
+
+    protected PostCommentForReview(Body body, BodyInterceptor<BaseBody> bodyInterceptor, OkHttpClient httpClient, Factory converterFactory, TokenInvalidator tokenInvalidator, SharedPreferences sharedPreferences) {
+        super(body, getHost(sharedPreferences), httpClient, converterFactory, bodyInterceptor, tokenInvalidator);
+    }
+
+    public static String getHost(SharedPreferences sharedPreferences) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(ToolboxManager.isToolboxEnableHttpScheme(sharedPreferences) ? Constants.HTTP : "https");
+        sb.append("://");
+        sb.append(BuildConfig.APTOIDE_WEB_SERVICES_WRITE_V7_HOST);
+        sb.append("/api/7/");
+        return sb.toString();
+    }
+
+    /* renamed from: of */
+    public static PostCommentForReview m7480of(long reviewId, String text, BodyInterceptor<BaseBody> bodyInterceptor, OkHttpClient httpClient, Factory converterFactory, TokenInvalidator tokenInvalidator, SharedPreferences sharedPreferences) {
+        PostCommentForReview postCommentForReview = new PostCommentForReview(new Body(reviewId, text), bodyInterceptor, httpClient, converterFactory, tokenInvalidator, sharedPreferences);
+        return postCommentForReview;
+    }
+
+    /* access modifiers changed from: protected */
+    public C0120S<BaseV7Response> loadDataFromNetwork(Interfaces interfaces, boolean bypassCache) {
+        return interfaces.postReviewComment((Body) this.body, true);
+    }
+}
